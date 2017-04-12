@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7637BDE11E9DD10C004C3EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BDE01E9DD10C004C3EF5 /* AppDelegate.swift */; };
+		7637BDE31E9DD10C004C3EF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BDE21E9DD10C004C3EF5 /* ViewController.swift */; };
+		7637BDE61E9DD10C004C3EF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7637BDE41E9DD10C004C3EF5 /* Main.storyboard */; };
+		7637BDE91E9DD10C004C3EF5 /* Crown_Proto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7637BDE71E9DD10C004C3EF5 /* Crown_Proto.xcdatamodeld */; };
+		7637BDEB1E9DD10C004C3EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7637BDEA1E9DD10C004C3EF5 /* Assets.xcassets */; };
+		7637BDEE1E9DD10C004C3EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7637BDEC1E9DD10C004C3EF5 /* LaunchScreen.storyboard */; };
+		7637BDF91E9DD10C004C3EF5 /* Crown_ProtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BDF81E9DD10C004C3EF5 /* Crown_ProtoTests.swift */; };
+		7637BE041E9DD10C004C3EF5 /* Crown_ProtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BE031E9DD10C004C3EF5 /* Crown_ProtoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7637BDF51E9DD10C004C3EF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7637BDD51E9DD10C004C3EF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7637BDDC1E9DD10C004C3EF5;
+			remoteInfo = "Crown Proto";
+		};
+		7637BE001E9DD10C004C3EF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7637BDD51E9DD10C004C3EF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7637BDDC1E9DD10C004C3EF5;
+			remoteInfo = "Crown Proto";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7637BDDD1E9DD10C004C3EF5 /* Crown Proto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crown Proto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7637BDE01E9DD10C004C3EF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7637BDE21E9DD10C004C3EF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7637BDE51E9DD10C004C3EF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7637BDE81E9DD10C004C3EF5 /* Crown_Proto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crown_Proto.xcdatamodel; sourceTree = "<group>"; };
+		7637BDEA1E9DD10C004C3EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7637BDED1E9DD10C004C3EF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7637BDEF1E9DD10C004C3EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7637BDF41E9DD10C004C3EF5 /* Crown ProtoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crown ProtoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7637BDF81E9DD10C004C3EF5 /* Crown_ProtoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crown_ProtoTests.swift; sourceTree = "<group>"; };
+		7637BDFA1E9DD10C004C3EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7637BDFF1E9DD10C004C3EF5 /* Crown ProtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crown ProtoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7637BE031E9DD10C004C3EF5 /* Crown_ProtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crown_ProtoUITests.swift; sourceTree = "<group>"; };
+		7637BE051E9DD10C004C3EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7637BDDA1E9DD10C004C3EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7637BDF11E9DD10C004C3EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7637BDFC1E9DD10C004C3EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7637BDD41E9DD10C004C3EF5 = {
+			isa = PBXGroup;
+			children = (
+				7637BDDF1E9DD10C004C3EF5 /* Crown Proto */,
+				7637BDF71E9DD10C004C3EF5 /* Crown ProtoTests */,
+				7637BE021E9DD10C004C3EF5 /* Crown ProtoUITests */,
+				7637BDDE1E9DD10C004C3EF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7637BDDE1E9DD10C004C3EF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7637BDDD1E9DD10C004C3EF5 /* Crown Proto.app */,
+				7637BDF41E9DD10C004C3EF5 /* Crown ProtoTests.xctest */,
+				7637BDFF1E9DD10C004C3EF5 /* Crown ProtoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7637BDDF1E9DD10C004C3EF5 /* Crown Proto */ = {
+			isa = PBXGroup;
+			children = (
+				7637BDE01E9DD10C004C3EF5 /* AppDelegate.swift */,
+				7637BDE21E9DD10C004C3EF5 /* ViewController.swift */,
+				7637BDE41E9DD10C004C3EF5 /* Main.storyboard */,
+				7637BDEA1E9DD10C004C3EF5 /* Assets.xcassets */,
+				7637BDEC1E9DD10C004C3EF5 /* LaunchScreen.storyboard */,
+				7637BDEF1E9DD10C004C3EF5 /* Info.plist */,
+				7637BDE71E9DD10C004C3EF5 /* Crown_Proto.xcdatamodeld */,
+			);
+			path = "Crown Proto";
+			sourceTree = "<group>";
+		};
+		7637BDF71E9DD10C004C3EF5 /* Crown ProtoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7637BDF81E9DD10C004C3EF5 /* Crown_ProtoTests.swift */,
+				7637BDFA1E9DD10C004C3EF5 /* Info.plist */,
+			);
+			path = "Crown ProtoTests";
+			sourceTree = "<group>";
+		};
+		7637BE021E9DD10C004C3EF5 /* Crown ProtoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7637BE031E9DD10C004C3EF5 /* Crown_ProtoUITests.swift */,
+				7637BE051E9DD10C004C3EF5 /* Info.plist */,
+			);
+			path = "Crown ProtoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7637BDDC1E9DD10C004C3EF5 /* Crown Proto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7637BE081E9DD10C004C3EF5 /* Build configuration list for PBXNativeTarget "Crown Proto" */;
+			buildPhases = (
+				7637BDD91E9DD10C004C3EF5 /* Sources */,
+				7637BDDA1E9DD10C004C3EF5 /* Frameworks */,
+				7637BDDB1E9DD10C004C3EF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crown Proto";
+			productName = "Crown Proto";
+			productReference = 7637BDDD1E9DD10C004C3EF5 /* Crown Proto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7637BDF31E9DD10C004C3EF5 /* Crown ProtoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7637BE0B1E9DD10C004C3EF5 /* Build configuration list for PBXNativeTarget "Crown ProtoTests" */;
+			buildPhases = (
+				7637BDF01E9DD10C004C3EF5 /* Sources */,
+				7637BDF11E9DD10C004C3EF5 /* Frameworks */,
+				7637BDF21E9DD10C004C3EF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7637BDF61E9DD10C004C3EF5 /* PBXTargetDependency */,
+			);
+			name = "Crown ProtoTests";
+			productName = "Crown ProtoTests";
+			productReference = 7637BDF41E9DD10C004C3EF5 /* Crown ProtoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7637BDFE1E9DD10C004C3EF5 /* Crown ProtoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7637BE0E1E9DD10C004C3EF5 /* Build configuration list for PBXNativeTarget "Crown ProtoUITests" */;
+			buildPhases = (
+				7637BDFB1E9DD10C004C3EF5 /* Sources */,
+				7637BDFC1E9DD10C004C3EF5 /* Frameworks */,
+				7637BDFD1E9DD10C004C3EF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7637BE011E9DD10C004C3EF5 /* PBXTargetDependency */,
+			);
+			name = "Crown ProtoUITests";
+			productName = "Crown ProtoUITests";
+			productReference = 7637BDFF1E9DD10C004C3EF5 /* Crown ProtoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7637BDD51E9DD10C004C3EF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Campbell Brobbel";
+				TargetAttributes = {
+					7637BDDC1E9DD10C004C3EF5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					7637BDF31E9DD10C004C3EF5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7637BDDC1E9DD10C004C3EF5;
+					};
+					7637BDFE1E9DD10C004C3EF5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7637BDDC1E9DD10C004C3EF5;
+					};
+				};
+			};
+			buildConfigurationList = 7637BDD81E9DD10C004C3EF5 /* Build configuration list for PBXProject "Crown Proto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7637BDD41E9DD10C004C3EF5;
+			productRefGroup = 7637BDDE1E9DD10C004C3EF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7637BDDC1E9DD10C004C3EF5 /* Crown Proto */,
+				7637BDF31E9DD10C004C3EF5 /* Crown ProtoTests */,
+				7637BDFE1E9DD10C004C3EF5 /* Crown ProtoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7637BDDB1E9DD10C004C3EF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7637BDEE1E9DD10C004C3EF5 /* LaunchScreen.storyboard in Resources */,
+				7637BDEB1E9DD10C004C3EF5 /* Assets.xcassets in Resources */,
+				7637BDE61E9DD10C004C3EF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7637BDF21E9DD10C004C3EF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7637BDFD1E9DD10C004C3EF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7637BDD91E9DD10C004C3EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7637BDE31E9DD10C004C3EF5 /* ViewController.swift in Sources */,
+				7637BDE91E9DD10C004C3EF5 /* Crown_Proto.xcdatamodeld in Sources */,
+				7637BDE11E9DD10C004C3EF5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7637BDF01E9DD10C004C3EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7637BDF91E9DD10C004C3EF5 /* Crown_ProtoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7637BDFB1E9DD10C004C3EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7637BE041E9DD10C004C3EF5 /* Crown_ProtoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7637BDF61E9DD10C004C3EF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7637BDDC1E9DD10C004C3EF5 /* Crown Proto */;
+			targetProxy = 7637BDF51E9DD10C004C3EF5 /* PBXContainerItemProxy */;
+		};
+		7637BE011E9DD10C004C3EF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7637BDDC1E9DD10C004C3EF5 /* Crown Proto */;
+			targetProxy = 7637BE001E9DD10C004C3EF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7637BDE41E9DD10C004C3EF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7637BDE51E9DD10C004C3EF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7637BDEC1E9DD10C004C3EF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7637BDED1E9DD10C004C3EF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7637BE061E9DD10C004C3EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7637BE071E9DD10C004C3EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7637BE091E9DD10C004C3EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Crown Proto/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-Proto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7637BE0A1E9DD10C004C3EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Crown Proto/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-Proto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7637BE0C1E9DD10C004C3EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Crown ProtoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-ProtoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crown Proto.app/Crown Proto";
+			};
+			name = Debug;
+		};
+		7637BE0D1E9DD10C004C3EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Crown ProtoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-ProtoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crown Proto.app/Crown Proto";
+			};
+			name = Release;
+		};
+		7637BE0F1E9DD10C004C3EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Crown ProtoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-ProtoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Crown Proto";
+			};
+			name = Debug;
+		};
+		7637BE101E9DD10C004C3EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Crown ProtoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-ProtoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Crown Proto";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7637BDD81E9DD10C004C3EF5 /* Build configuration list for PBXProject "Crown Proto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7637BE061E9DD10C004C3EF5 /* Debug */,
+				7637BE071E9DD10C004C3EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7637BE081E9DD10C004C3EF5 /* Build configuration list for PBXNativeTarget "Crown Proto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7637BE091E9DD10C004C3EF5 /* Debug */,
+				7637BE0A1E9DD10C004C3EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7637BE0B1E9DD10C004C3EF5 /* Build configuration list for PBXNativeTarget "Crown ProtoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7637BE0C1E9DD10C004C3EF5 /* Debug */,
+				7637BE0D1E9DD10C004C3EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7637BE0E1E9DD10C004C3EF5 /* Build configuration list for PBXNativeTarget "Crown ProtoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7637BE0F1E9DD10C004C3EF5 /* Debug */,
+				7637BE101E9DD10C004C3EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7637BDE71E9DD10C004C3EF5 /* Crown_Proto.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7637BDE81E9DD10C004C3EF5 /* Crown_Proto.xcdatamodel */,
+			);
+			currentVersion = 7637BDE81E9DD10C004C3EF5 /* Crown_Proto.xcdatamodel */;
+			path = Crown_Proto.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7637BDD51E9DD10C004C3EF5 /* Project object */;
+}
