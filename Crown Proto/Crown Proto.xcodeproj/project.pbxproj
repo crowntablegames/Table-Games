@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5632172BC6921B7CDCFBFDD4 /* Pods_Crown_ProtoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B49F3F3CC1BA65BC307A31 /* Pods_Crown_ProtoUITests.framework */; };
 		7637BDE11E9DD10C004C3EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BDE01E9DD10C004C3EF5 /* AppDelegate.swift */; };
 		7637BDE31E9DD10C004C3EF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BDE21E9DD10C004C3EF5 /* ViewController.swift */; };
 		7637BDE61E9DD10C004C3EF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7637BDE41E9DD10C004C3EF5 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		7637BDEE1E9DD10C004C3EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7637BDEC1E9DD10C004C3EF5 /* LaunchScreen.storyboard */; };
 		7637BDF91E9DD10C004C3EF5 /* Crown_ProtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BDF81E9DD10C004C3EF5 /* Crown_ProtoTests.swift */; };
 		7637BE041E9DD10C004C3EF5 /* Crown_ProtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BE031E9DD10C004C3EF5 /* Crown_ProtoUITests.swift */; };
+		7E3BAB0818B8E0F86929AEB5 /* Pods_Crown_ProtoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C974DAAE75A1156C56724 /* Pods_Crown_ProtoTests.framework */; };
+		E23F5BAD48C902B0A4605C6A /* Pods_Crown_Proto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FFE21D0B113AE1D40102EB /* Pods_Crown_Proto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CE96F062B351F771CBCBAE9 /* Pods-Crown Proto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crown Proto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crown Proto/Pods-Crown Proto.debug.xcconfig"; sourceTree = "<group>"; };
+		427CF2CA44E7A050DECADFC0 /* Pods-Crown ProtoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crown ProtoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crown ProtoTests/Pods-Crown ProtoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50FFE21D0B113AE1D40102EB /* Pods_Crown_Proto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crown_Proto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D5E5445E64EBD7460021AE /* Pods-Crown Proto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crown Proto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crown Proto/Pods-Crown Proto.release.xcconfig"; sourceTree = "<group>"; };
+		760427BC1E9DEE6600E89322 /* ObjCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		7637BDDD1E9DD10C004C3EF5 /* Crown Proto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crown Proto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7637BDE01E9DD10C004C3EF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7637BDE21E9DD10C004C3EF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,11 @@
 		7637BDFF1E9DD10C004C3EF5 /* Crown ProtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crown ProtoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7637BE031E9DD10C004C3EF5 /* Crown_ProtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crown_ProtoUITests.swift; sourceTree = "<group>"; };
 		7637BE051E9DD10C004C3EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4C974DAAE75A1156C56724 /* Pods_Crown_ProtoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crown_ProtoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0C08133BF0449414746B60C /* Pods-Crown ProtoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crown ProtoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crown ProtoUITests/Pods-Crown ProtoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3B49F3F3CC1BA65BC307A31 /* Pods_Crown_ProtoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crown_ProtoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF8C5BEBC2FECF682B2E5D4 /* Pods-Crown ProtoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crown ProtoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crown ProtoTests/Pods-Crown ProtoTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECB47138BB7774B2278B5DBD /* Pods-Crown ProtoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crown ProtoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crown ProtoUITests/Pods-Crown ProtoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23F5BAD48C902B0A4605C6A /* Pods_Crown_Proto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3BAB0818B8E0F86929AEB5 /* Pods_Crown_ProtoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +85,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5632172BC6921B7CDCFBFDD4 /* Pods_Crown_ProtoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F87C2DCFEB7B8F663B4D213 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50FFE21D0B113AE1D40102EB /* Pods_Crown_Proto.framework */,
+				CA4C974DAAE75A1156C56724 /* Pods_Crown_ProtoTests.framework */,
+				E3B49F3F3CC1BA65BC307A31 /* Pods_Crown_ProtoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7637BDD41E9DD10C004C3EF5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +109,9 @@
 				7637BDF71E9DD10C004C3EF5 /* Crown ProtoTests */,
 				7637BE021E9DD10C004C3EF5 /* Crown ProtoUITests */,
 				7637BDDE1E9DD10C004C3EF5 /* Products */,
+				DA12CBB1A2C8F918DE1F2C4C /* Pods */,
+				5F87C2DCFEB7B8F663B4D213 /* Frameworks */,
+				76FAB0251E9DEDBA00607B51 /* Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +135,7 @@
 				7637BDEC1E9DD10C004C3EF5 /* LaunchScreen.storyboard */,
 				7637BDEF1E9DD10C004C3EF5 /* Info.plist */,
 				7637BDE71E9DD10C004C3EF5 /* Crown_Proto.xcdatamodeld */,
+				760427BC1E9DEE6600E89322 /* ObjCBridge.h */,
 			);
 			path = "Crown Proto";
 			sourceTree = "<group>";
@@ -128,6 +158,26 @@
 			path = "Crown ProtoUITests";
 			sourceTree = "<group>";
 		};
+		76FAB0251E9DEDBA00607B51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		DA12CBB1A2C8F918DE1F2C4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CE96F062B351F771CBCBAE9 /* Pods-Crown Proto.debug.xcconfig */,
+				59D5E5445E64EBD7460021AE /* Pods-Crown Proto.release.xcconfig */,
+				427CF2CA44E7A050DECADFC0 /* Pods-Crown ProtoTests.debug.xcconfig */,
+				EBF8C5BEBC2FECF682B2E5D4 /* Pods-Crown ProtoTests.release.xcconfig */,
+				E0C08133BF0449414746B60C /* Pods-Crown ProtoUITests.debug.xcconfig */,
+				ECB47138BB7774B2278B5DBD /* Pods-Crown ProtoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7637BE081E9DD10C004C3EF5 /* Build configuration list for PBXNativeTarget "Crown Proto" */;
 			buildPhases = (
+				F1935B467CFB9A5D4F29ED21 /* [CP] Check Pods Manifest.lock */,
 				7637BDD91E9DD10C004C3EF5 /* Sources */,
 				7637BDDA1E9DD10C004C3EF5 /* Frameworks */,
 				7637BDDB1E9DD10C004C3EF5 /* Resources */,
+				E4707533E552584F3FFD6C71 /* [CP] Embed Pods Frameworks */,
+				62F1995BEF889CB61CF310D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7637BE0B1E9DD10C004C3EF5 /* Build configuration list for PBXNativeTarget "Crown ProtoTests" */;
 			buildPhases = (
+				41C4A59B0545AA8BFE24D77E /* [CP] Check Pods Manifest.lock */,
 				7637BDF01E9DD10C004C3EF5 /* Sources */,
 				7637BDF11E9DD10C004C3EF5 /* Frameworks */,
 				7637BDF21E9DD10C004C3EF5 /* Resources */,
+				9F79AE3BCC8D11D70A388CB2 /* [CP] Embed Pods Frameworks */,
+				7CE6363C19A70F488A18F265 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7637BE0E1E9DD10C004C3EF5 /* Build configuration list for PBXNativeTarget "Crown ProtoUITests" */;
 			buildPhases = (
+				BC5CC53FBB13661AF56A8C15 /* [CP] Check Pods Manifest.lock */,
 				7637BDFB1E9DD10C004C3EF5 /* Sources */,
 				7637BDFC1E9DD10C004C3EF5 /* Frameworks */,
 				7637BDFD1E9DD10C004C3EF5 /* Resources */,
+				7855BBCC0C7D9F6ADFDA124C /* [CP] Embed Pods Frameworks */,
+				7E552F0435171EF915554A34 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +315,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41C4A59B0545AA8BFE24D77E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62F1995BEF889CB61CF310D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crown Proto/Pods-Crown Proto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7855BBCC0C7D9F6ADFDA124C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crown ProtoUITests/Pods-Crown ProtoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE6363C19A70F488A18F265 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crown ProtoTests/Pods-Crown ProtoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E552F0435171EF915554A34 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crown ProtoUITests/Pods-Crown ProtoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F79AE3BCC8D11D70A388CB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crown ProtoTests/Pods-Crown ProtoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC5CC53FBB13661AF56A8C15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4707533E552584F3FFD6C71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crown Proto/Pods-Crown Proto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1935B467CFB9A5D4F29ED21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7637BDD91E9DD10C004C3EF5 /* Sources */ = {
@@ -414,30 +611,35 @@
 		};
 		7637BE091E9DD10C004C3EF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE96F062B351F771CBCBAE9 /* Pods-Crown Proto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Crown Proto/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-Proto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		7637BE0A1E9DD10C004C3EF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D5E5445E64EBD7460021AE /* Pods-Crown Proto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Crown Proto/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-Proto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		7637BE0C1E9DD10C004C3EF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427CF2CA44E7A050DECADFC0 /* Pods-Crown ProtoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +654,7 @@
 		};
 		7637BE0D1E9DD10C004C3EF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF8C5BEBC2FECF682B2E5D4 /* Pods-Crown ProtoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +669,7 @@
 		};
 		7637BE0F1E9DD10C004C3EF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0C08133BF0449414746B60C /* Pods-Crown ProtoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Crown ProtoUITests/Info.plist";
@@ -479,6 +683,7 @@
 		};
 		7637BE101E9DD10C004C3EF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECB47138BB7774B2278B5DBD /* Pods-Crown ProtoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Crown ProtoUITests/Info.plist";
@@ -509,6 +714,7 @@
 				7637BE0A1E9DD10C004C3EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7637BE0B1E9DD10C004C3EF5 /* Build configuration list for PBXNativeTarget "Crown ProtoTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +723,7 @@
 				7637BE0D1E9DD10C004C3EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7637BE0E1E9DD10C004C3EF5 /* Build configuration list for PBXNativeTarget "Crown ProtoUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +732,7 @@
 				7637BE101E9DD10C004C3EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
