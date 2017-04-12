@@ -1,0 +1,6 @@
+framework module Pods_Crown_Proto {
+  umbrella header "Pods-Crown Proto-umbrella.h"
+
+  export *
+  module * { export * }
+}
