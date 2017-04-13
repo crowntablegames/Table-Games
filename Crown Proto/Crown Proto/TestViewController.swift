@@ -33,7 +33,7 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
 
         let region : CLBeaconRegion = CLBeaconRegion(proximityUUID: UUID(uuidString: proxID)!, identifier: "TEST")
         beaconManager.startRangingBeacons(in: region)
-        beaconManager.stopRangingBeacons(in: region)
+        //beaconManager.stopRangingBeacons(in: region)
         
 
     }
@@ -110,4 +110,25 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
         seconds += 1
     }
 
+   public func playerDidLeaveTable() {
+        let content = UNMutableNotificationContent()
+        
+        content.title = "Crown Entertainment"
+        content.body = "We want you to tell us what you think of our service."
+        content.sound = UNNotificationSound.default()
+        print("enter")
+        content.categoryIdentifier = "exitRegionNotification"
+        
+        // Deliver the notification in five seconds.
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0, repeats: false)
+        let request = UNNotificationRequest(identifier: "finishRedeemingPoints", content: content, trigger: trigger)
+        let center = UNUserNotificationCenter.current()
+        
+        center.add(request) { (error : Error?) in
+            if let theError = error {
+                print("theError \(theError)")
+            }
+        }
+    }
+    
 }
