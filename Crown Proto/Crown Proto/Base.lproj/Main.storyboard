@@ -28,7 +28,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected/Disconnected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVx-Wf-yf0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVx-Wf-yf0">
                                 <rect key="frame" x="16" y="124" width="343" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="tZC-bc-BWP"/>
@@ -50,8 +50,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="connectionLabel" destination="nVx-Wf-yf0" id="zwi-Uj-FfA"/>
                         <outlet property="idLabel" destination="nPW-fp-7mQ" id="zyG-Un-BCq"/>
+                        <outlet property="timerLabel" destination="nVx-Wf-yf0" id="vwY-90-rzR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
