@@ -21,6 +21,7 @@
 		7637BE041E9DD10C004C3EF5 /* Crown_ProtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BE031E9DD10C004C3EF5 /* Crown_ProtoUITests.swift */; };
 		76A87FFD1E9E42DA0013C611 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A87FFC1E9E42DA0013C611 /* Table.swift */; };
 		76A87FFF1E9E43650013C611 /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A87FFE1E9E43650013C611 /* Dealer.swift */; };
+		7E25B8201E9F2F4500711CB6 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E25B81F1E9F2F4500711CB6 /* SurveyViewController.swift */; };
 		7E3BAB0818B8E0F86929AEB5 /* Pods_Crown_ProtoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C974DAAE75A1156C56724 /* Pods_Crown_ProtoTests.framework */; };
 		E23F5BAD48C902B0A4605C6A /* Pods_Crown_Proto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FFE21D0B113AE1D40102EB /* Pods_Crown_Proto.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		7637BE051E9DD10C004C3EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76A87FFC1E9E42DA0013C611 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		76A87FFE1E9E43650013C611 /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
+		7E25B81F1E9F2F4500711CB6 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		CA4C974DAAE75A1156C56724 /* Pods_Crown_ProtoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crown_ProtoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C08133BF0449414746B60C /* Pods-Crown ProtoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crown ProtoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crown ProtoUITests/Pods-Crown ProtoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3B49F3F3CC1BA65BC307A31 /* Pods_Crown_ProtoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crown_ProtoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +143,7 @@
 				7610944B1E9EF38C00567AC7 /* FManager.swift */,
 				7637BDE01E9DD10C004C3EF5 /* AppDelegate.swift */,
 				760427BD1E9DF0F900E89322 /* TestViewController.swift */,
+				7E25B81F1E9F2F4500711CB6 /* SurveyViewController.swift */,
 				76A87FFC1E9E42DA0013C611 /* Table.swift */,
 				76A87FFE1E9E43650013C611 /* Dealer.swift */,
 				7637BDE21E9DD10C004C3EF5 /* ViewController.swift */,
@@ -478,6 +481,7 @@
 			files = (
 				7637BDE31E9DD10C004C3EF5 /* ViewController.swift in Sources */,
 				76A87FFD1E9E42DA0013C611 /* Table.swift in Sources */,
+				7E25B8201E9F2F4500711CB6 /* SurveyViewController.swift in Sources */,
 				76A87FFF1E9E43650013C611 /* Dealer.swift in Sources */,
 				7637BDE91E9DD10C004C3EF5 /* Crown_Proto.xcdatamodeld in Sources */,
 				760427BE1E9DF0F900E89322 /* TestViewController.swift in Sources */,

@@ -20,6 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        //Allows access for notificationss
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self
+        let options: UNAuthorizationOptions = [.alert, .sound];
+        center.requestAuthorization(options: options) {
+            (granted, error) in
+            if !granted {
+                print("Something went wrong")
+            }
+        }
+        
         return true
     }
     
