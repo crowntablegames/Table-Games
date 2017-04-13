@@ -116,7 +116,7 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
         content.title = "Crown Entertainment"
         content.body = "We want you to tell us what you think of our service."
         content.sound = UNNotificationSound.default()
-        print("enter")
+        print("enterNotification")
         content.categoryIdentifier = "exitRegionNotification"
         
         // Deliver the notification in five seconds.
