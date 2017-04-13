@@ -18,7 +18,7 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
     var beaconManager : CLLocationManager = CLLocationManager()
     let proxID : String = "B9407F30-F5F8-466E-AFF9-25556B57FE6E"
     var tableBeacon : CLBeacon?
-    var tableInRange : Bool?
+    var playerAtTable : Bool = false
     var tables : [Table] = []
     
     var timer : Timer?
@@ -33,7 +33,6 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
 
         let region : CLBeaconRegion = CLBeaconRegion(proximityUUID: UUID(uuidString: proxID)!, identifier: "TEST")
         beaconManager.startRangingBeacons(in: region)
-        beaconManager.stopRangingBeacons(in: region)
         
 
     }
@@ -44,38 +43,47 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
         let knownBeacons = beacons.filter{ $0.proximity != CLProximity.unknown}
         
         if(knownBeacons.count > 0) {
+            
             for b in knownBeacons {
                 print(b)
             }
             print("-------")
             
             if (tableBeacon != nil) {
-                tableInRange = false
-                for b in knownBeacons {
-                    if(b.isEqual(tableBeacon)) {
-                        tableInRange = true
+                timerFunc()
+                if (!playerAtTable) {
+                    if (seconds == 10) {
+                        //Compare the stored Beacon with the first beacon in the array
+                        //If beacon is the same as beacons[0] then player is now at the table.
+                        
+                        
+                        if (tableBeacon!.major == knownBeacons.first!.major && tableBeacon!.minor == knownBeacons.first!.minor) {
+                            print("Player is at table")
+                            playerAtTable = true
+                            seconds = 0
+                        }
+                        else {
+                            print("Table Not Connected")
+                            tableBeacon = nil
+                            seconds = 0
+                        }
+                    
+                    }
+                    else {
+                        // Hasn't reached 10 seconds yet.
                     }
                 }
-                
-                if(!tableInRange!) {
-                    // Set off timer. When timer is complete trigger notification and set beacon to nil
-                    let region = CLBeaconRegion(proximityUUID: UUID(uuidString: proxID)!, identifier: "TEST")
-                    //beaconManager.stopRangingBeacons(in: region)
-                    //timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.timerFunc), userInfo: nil, repeats: true)
-                    print("Table Beacon Gone Out Of Range. Start Timer")
+                else {
+                    
                     
                 }
-                else {
-                    tableInRange = true
-                    print("Table Is Still in Range")
-                }
+            
                 
                 // Otherwise continue Ranging
             }
             else {
-                //tableBeacon = beacons.first! as CLBeacon
-                //changeLabels(beacon: tableBeacon!)
-                //print("Table Beacon : \(tableBeacon)")
+                tableBeacon = beacons.first! as CLBeacon
+               
             }
             
         }
