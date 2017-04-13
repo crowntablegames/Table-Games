@@ -15,6 +15,15 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     
+    @IBOutlet weak var dealerLabel: UILabel!
+    @IBAction func buttonPress(_ sender: Any) {
+        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "surveyController") as! SurveyViewController
+        
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
     var beaconManager : CLLocationManager = CLLocationManager()
     let proxID : String = "B9407F30-F5F8-466E-AFF9-25556B57FE6E"
     var tableBeacon : CLBeacon?
@@ -39,7 +48,6 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
-    
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         let knownBeacons = beacons.filter{ $0.proximity != CLProximity.unknown}
         
@@ -57,6 +65,12 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
                             print("Player is at table")
                             print(tableBeacon)
                             print("---------")
+                            for t in tables {
+                                if(t.getMajor() == tableBeacon!.major.intValue && t.getMinor() == tableBeacon!.minor.intValue) {
+                                    idLabel.text = "Table Number : \(t.getTableNumber())"
+                                    dealerLabel.text = "Dealer Name : \(t.getDealerName())"
+                                }
+                            }
                             playerAtTable = true
                             seconds = 0
                             timerLabel.text = "\(seconds)"
@@ -109,6 +123,8 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
                                 timerLabel.text = "\(seconds)"
                                 playerAtTable = false
                                 tableBeacon = nil
+                                idLabel.text = "No Table"
+                                dealerLabel.text = "No dealer"
                                 playerDidLeaveTable()
                             }
                             else {
