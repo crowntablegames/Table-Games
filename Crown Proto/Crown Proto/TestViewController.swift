@@ -30,11 +30,13 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
         self.beaconManager.delegate = self
         self.beaconManager.requestAlwaysAuthorization()
         
-
         let region : CLBeaconRegion = CLBeaconRegion(proximityUUID: UUID(uuidString: proxID)!, identifier: "TEST")
-        beaconManager.startRangingBeacons(in: region)
-        //beaconManager.stopRangingBeacons(in: region)
+        //beaconManager.startRangingBeacons(in: region)
         
+        //beaconManager.stopRangingBeacons(in: region)
+      // NotificationCenter.default.addObserver(self, selector: #selector(goToDifferentView), name: NSNotification.Name(rawValue: "segue"), object: nil)
+        
+        playerDidLeaveTable()
 
     }
     
@@ -120,7 +122,7 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
         content.categoryIdentifier = "exitRegionNotification"
         
         // Deliver the notification in five seconds.
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         let request = UNNotificationRequest(identifier: "finishRedeemingPoints", content: content, trigger: trigger)
         let center = UNUserNotificationCenter.current()
         
@@ -130,5 +132,14 @@ class TestViewController: UIViewController, CLLocationManagerDelegate {
             }
         }
     }
-    
+//Segue view when clicked on notification
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        
+        let home = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeScreen") as! TestViewController
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SurveyViewController") as! SurveyViewController
+        
+        home.present(vc, animated: true, completion: nil)
+    }
+
 }

@@ -69,6 +69,7 @@
 		76A87FFC1E9E42DA0013C611 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		76A87FFE1E9E43650013C611 /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
 		7E25B81F1E9F2F4500711CB6 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		7EFC41BA1E9F63040098B433 /* Crown Proto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Crown Proto.entitlements"; sourceTree = "<group>"; };
 		CA4C974DAAE75A1156C56724 /* Pods_Crown_ProtoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crown_ProtoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C08133BF0449414746B60C /* Pods-Crown ProtoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crown ProtoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crown ProtoUITests/Pods-Crown ProtoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3B49F3F3CC1BA65BC307A31 /* Pods_Crown_ProtoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crown_ProtoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +141,7 @@
 		7637BDDF1E9DD10C004C3EF5 /* Crown Proto */ = {
 			isa = PBXGroup;
 			children = (
+				7EFC41BA1E9F63040098B433 /* Crown Proto.entitlements */,
 				7610944B1E9EF38C00567AC7 /* FManager.swift */,
 				7637BDE01E9DD10C004C3EF5 /* AppDelegate.swift */,
 				760427BD1E9DF0F900E89322 /* TestViewController.swift */,
@@ -275,6 +277,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = GXC6BD8Z22;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					7637BDF31E9DD10C004C3EF5 = {
 						CreatedOnToolsVersion = 8.1;
