@@ -1,12 +1,15 @@
 PODS:
   - EstimoteSDK (4.14.0)
+  - FloatRatingView (2.0)
 
 DEPENDENCIES:
   - EstimoteSDK
+  - FloatRatingView (~> 2.0.0)
 
 SPEC CHECKSUMS:
   EstimoteSDK: 8674ac3687fddfb28d1660c0a8361a55e5da28ba
+  FloatRatingView: 857ab8f10040d06a42fc979f486c8f9fecd2f2e5
 
-PODFILE CHECKSUM: 616d73bed95a14b14ecac67d81d2057f500e834f
+PODFILE CHECKSUM: 45a26006e81b800bc1add3f077d4baf956a3d917
 
 COCOAPODS: 1.2.0

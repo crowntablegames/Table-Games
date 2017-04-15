@@ -10,9 +10,7 @@
 		5632172BC6921B7CDCFBFDD4 /* Pods_Crown_ProtoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B49F3F3CC1BA65BC307A31 /* Pods_Crown_ProtoUITests.framework */; };
 		760427BE1E9DF0F900E89322 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760427BD1E9DF0F900E89322 /* TestViewController.swift */; };
 		7610944A1E9EEFEC00567AC7 /* tableInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 761094491E9EEFEC00567AC7 /* tableInfo.txt */; };
-		7610944C1E9EF38C00567AC7 /* FManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7610944B1E9EF38C00567AC7 /* FManager.swift */; };
 		7637BDE11E9DD10C004C3EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BDE01E9DD10C004C3EF5 /* AppDelegate.swift */; };
-		7637BDE31E9DD10C004C3EF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BDE21E9DD10C004C3EF5 /* ViewController.swift */; };
 		7637BDE61E9DD10C004C3EF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7637BDE41E9DD10C004C3EF5 /* Main.storyboard */; };
 		7637BDE91E9DD10C004C3EF5 /* Crown_Proto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7637BDE71E9DD10C004C3EF5 /* Crown_Proto.xcdatamodeld */; };
 		7637BDEB1E9DD10C004C3EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7637BDEA1E9DD10C004C3EF5 /* Assets.xcassets */; };
@@ -21,6 +19,7 @@
 		7637BE041E9DD10C004C3EF5 /* Crown_ProtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637BE031E9DD10C004C3EF5 /* Crown_ProtoUITests.swift */; };
 		76A87FFD1E9E42DA0013C611 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A87FFC1E9E42DA0013C611 /* Table.swift */; };
 		76A87FFF1E9E43650013C611 /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A87FFE1E9E43650013C611 /* Dealer.swift */; };
+		76AAB9B61E9F729E007D088D /* FloatRatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AAB9B51E9F729E007D088D /* FloatRatingView.framework */; };
 		76C44FC91E9F5F4600B6BD93 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C44FC81E9F5F4600B6BD93 /* SurveyViewController.swift */; };
 		7E3BAB0818B8E0F86929AEB5 /* Pods_Crown_ProtoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C974DAAE75A1156C56724 /* Pods_Crown_ProtoTests.framework */; };
 		E23F5BAD48C902B0A4605C6A /* Pods_Crown_Proto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FFE21D0B113AE1D40102EB /* Pods_Crown_Proto.framework */; };
@@ -51,10 +50,8 @@
 		760427BC1E9DEE6600E89322 /* ObjCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		760427BD1E9DF0F900E89322 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		761094491E9EEFEC00567AC7 /* tableInfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tableInfo.txt; sourceTree = "<group>"; };
-		7610944B1E9EF38C00567AC7 /* FManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FManager.swift; sourceTree = "<group>"; };
 		7637BDDD1E9DD10C004C3EF5 /* Crown Proto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crown Proto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7637BDE01E9DD10C004C3EF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7637BDE21E9DD10C004C3EF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7637BDE51E9DD10C004C3EF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7637BDE81E9DD10C004C3EF5 /* Crown_Proto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crown_Proto.xcdatamodel; sourceTree = "<group>"; };
 		7637BDEA1E9DD10C004C3EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +65,8 @@
 		7637BE051E9DD10C004C3EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76A87FFC1E9E42DA0013C611 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		76A87FFE1E9E43650013C611 /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
+		76AAB9B51E9F729E007D088D /* FloatRatingView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FloatRatingView.framework; path = "../../../Library/Developer/Xcode/DerivedData/Crown_Proto-arebgayxzcagoecrjvwqognsodyz/Build/Products/Debug-iphoneos/FloatRatingView/FloatRatingView.framework"; sourceTree = "<group>"; };
+		76AAB9BB1E9FBFE2007D088D /* Crown Proto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Crown Proto.entitlements"; sourceTree = "<group>"; };
 		76C44FC81E9F5F4600B6BD93 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		CA4C974DAAE75A1156C56724 /* Pods_Crown_ProtoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crown_ProtoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C08133BF0449414746B60C /* Pods-Crown ProtoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crown ProtoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crown ProtoUITests/Pods-Crown ProtoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AAB9B61E9F729E007D088D /* FloatRatingView.framework in Frameworks */,
 				E23F5BAD48C902B0A4605C6A /* Pods_Crown_Proto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +107,7 @@
 		5F87C2DCFEB7B8F663B4D213 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76AAB9B51E9F729E007D088D /* FloatRatingView.framework */,
 				50FFE21D0B113AE1D40102EB /* Pods_Crown_Proto.framework */,
 				CA4C974DAAE75A1156C56724 /* Pods_Crown_ProtoTests.framework */,
 				E3B49F3F3CC1BA65BC307A31 /* Pods_Crown_ProtoUITests.framework */,
@@ -140,16 +141,11 @@
 		7637BDDF1E9DD10C004C3EF5 /* Crown Proto */ = {
 			isa = PBXGroup;
 			children = (
-				7610944B1E9EF38C00567AC7 /* FManager.swift */,
+				7651503B1E9FFD2000AEF4C4 /* Views */,
+				7651503A1E9FFD0A00AEF4C4 /* Model */,
+				76AAB9BB1E9FBFE2007D088D /* Crown Proto.entitlements */,
 				7637BDE01E9DD10C004C3EF5 /* AppDelegate.swift */,
-				760427BD1E9DF0F900E89322 /* TestViewController.swift */,
-				76C44FC81E9F5F4600B6BD93 /* SurveyViewController.swift */,
-				76A87FFC1E9E42DA0013C611 /* Table.swift */,
-				76A87FFE1E9E43650013C611 /* Dealer.swift */,
-				7637BDE21E9DD10C004C3EF5 /* ViewController.swift */,
-				7637BDE41E9DD10C004C3EF5 /* Main.storyboard */,
-				7637BDEA1E9DD10C004C3EF5 /* Assets.xcassets */,
-				7637BDEC1E9DD10C004C3EF5 /* LaunchScreen.storyboard */,
+				7651503C1E9FFD4B00AEF4C4 /* Storyboards/Images */,
 				7637BDEF1E9DD10C004C3EF5 /* Info.plist */,
 				7637BDE71E9DD10C004C3EF5 /* Crown_Proto.xcdatamodeld */,
 				760427BC1E9DEE6600E89322 /* ObjCBridge.h */,
@@ -174,6 +170,34 @@
 				7637BE051E9DD10C004C3EF5 /* Info.plist */,
 			);
 			path = "Crown ProtoUITests";
+			sourceTree = "<group>";
+		};
+		7651503A1E9FFD0A00AEF4C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76A87FFC1E9E42DA0013C611 /* Table.swift */,
+				76A87FFE1E9E43650013C611 /* Dealer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7651503B1E9FFD2000AEF4C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				760427BD1E9DF0F900E89322 /* TestViewController.swift */,
+				76C44FC81E9F5F4600B6BD93 /* SurveyViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7651503C1E9FFD4B00AEF4C4 /* Storyboards/Images */ = {
+			isa = PBXGroup;
+			children = (
+				7637BDE41E9DD10C004C3EF5 /* Main.storyboard */,
+				7637BDEA1E9DD10C004C3EF5 /* Assets.xcassets */,
+				7637BDEC1E9DD10C004C3EF5 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards/Images;
 			sourceTree = "<group>";
 		};
 		76FAB0251E9DEDBA00607B51 /* Support Files */ = {
@@ -275,6 +299,14 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = GXC6BD8Z22;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					7637BDF31E9DD10C004C3EF5 = {
 						CreatedOnToolsVersion = 8.1;
@@ -479,14 +511,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7637BDE31E9DD10C004C3EF5 /* ViewController.swift in Sources */,
 				76A87FFD1E9E42DA0013C611 /* Table.swift in Sources */,
 				76C44FC91E9F5F4600B6BD93 /* SurveyViewController.swift in Sources */,
 				76A87FFF1E9E43650013C611 /* Dealer.swift in Sources */,
 				7637BDE91E9DD10C004C3EF5 /* Crown_Proto.xcdatamodeld in Sources */,
 				760427BE1E9DF0F900E89322 /* TestViewController.swift in Sources */,
 				7637BDE11E9DD10C004C3EF5 /* AppDelegate.swift in Sources */,
-				7610944C1E9EF38C00567AC7 /* FManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,11 +671,12 @@
 			baseConfigurationReference = 3CE96F062B351F771CBCBAE9 /* Pods-Crown Proto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Crown Proto/Crown Proto.entitlements";
 				DEVELOPMENT_TEAM = GXC6BD8Z22;
 				INFOPLIST_FILE = "Crown Proto/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-Proto";
+				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-Prot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				SWIFT_VERSION = 3.0;
@@ -657,11 +688,12 @@
 			baseConfigurationReference = 59D5E5445E64EBD7460021AE /* Pods-Crown Proto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Crown Proto/Crown Proto.entitlements";
 				DEVELOPMENT_TEAM = GXC6BD8Z22;
 				INFOPLIST_FILE = "Crown Proto/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-Proto";
+				PRODUCT_BUNDLE_IDENTIFIER = "CB.Crown-Prot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				SWIFT_VERSION = 3.0;
