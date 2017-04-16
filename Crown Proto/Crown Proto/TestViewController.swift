@@ -105,6 +105,16 @@ extension TestViewController : CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         print(beacons)
+        
+        var firstBeacon : CLBeacon?
+        
+        for beacon in beacons {
+            if(beacon.proximity == CLProximity.immediate) {
+                firstBeacon = beacon
+                break
+            }
+        }
+        
         //manager.startMonitoring(for: region)
         let knownBeacons = beacons.filter{ $0.proximity != CLProximity.unknown}
         
@@ -149,7 +159,7 @@ extension TestViewController : CLLocationManagerDelegate {
                 else {
                     // Player is at the table
                     
-                    if(beacons.first!.major == tableBeacon!.major && beacons.first!.minor == tableBeacon!.minor) {
+                    if(knownBeacons.first!.major == tableBeacon!.major && knownBeacons.first!.minor == tableBeacon!.minor) {
                         
                         tableInRange = true
                         seconds = 0
@@ -165,7 +175,7 @@ extension TestViewController : CLLocationManagerDelegate {
                         print("Table going out of range")
                         timerFunc()
                         
-                        if(beacons.first!.major == tableBeacon!.major && beacons.first!.minor == tableBeacon!.minor) {
+                        if(knownBeacons.first!.major == tableBeacon!.major && knownBeacons.first!.minor == tableBeacon!.minor) {
                             tableInRange = true
                             seconds = 0
                             print("Player Back at table")
@@ -194,7 +204,7 @@ extension TestViewController : CLLocationManagerDelegate {
                 
             }
             else {
-                tableBeacon = beacons.first! as CLBeacon
+                tableBeacon = knownBeacons.first! as CLBeacon
                 
             }
             
