@@ -41,6 +41,23 @@ class SurveyViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
        textField.delegate = self
         tableLabel.text = self.playerTable.getTableNumber()
         
+    }
+    
+    func setupPickerView() {
+        pickerView.dataSource = self
+        pickerView.delegate = self
+        pickerView.layer.cornerRadius = 10
+        
+    }
+    func updatePickerView() {
+        
+    }
+    @IBAction func dismiss(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+
+    }
+    @IBAction func submit(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
         //link to PHP file for mySQL
         let request = NSMutableURLRequest(url: NSURL(string: "https://localhost/crownProto/connnect.php")! as URL)
         request.httpMethod = "POST"
@@ -66,26 +83,6 @@ class SurveyViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
             print("responseString = \(responseString)")
         }
         //end
-
-        
-    }
-    
-    func setupPickerView() {
-        pickerView.dataSource = self
-        pickerView.delegate = self
-        pickerView.layer.cornerRadius = 10
-        
-    }
-    func updatePickerView() {
-        
-    }
-    @IBAction func dismiss(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-
-    }
-    @IBAction func submit(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
