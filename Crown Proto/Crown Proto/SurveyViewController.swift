@@ -38,6 +38,33 @@ class SurveyViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
        textField.delegate = self
         tableLabel.text = self.playerTable.getTableNumber()
         
+        //link to PHP file for mySQL
+        let request = NSMutableURLRequest(url: NSURL(string: "https://localhost/crownProto/connnect.php")! as URL)
+        request.httpMethod = "POST"
+        
+        let postString = "a=\(serviceRank)"
+        //slider
+        //&b=\(pickerView.text)&c=\(tableNumber.text!)&d=\(dealer.text!)
+        
+        
+        request.httpBody = postString.data(using: String.Encoding.utf8)
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest) {
+            data, response, error in
+            
+            if error != nil {
+                print("error=\(error)")
+                return
+            }
+            
+            print("response = \(response)")
+            
+            let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            print("responseString = \(responseString)")
+        }
+        //end
+
+        
     }
     
     func setupPickerView() {
