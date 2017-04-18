@@ -133,4 +133,5 @@ class TouchSlider : UISlider {
         print(touch)
         return true
     }
+    
 }

@@ -96,10 +96,15 @@ class TestViewController: UIViewController {
         let table1 = Table(tableNumber: "2412", dealerName: "Candy", major: 48476, minor: 56089)
         //Lemon
         let table2 = Table(tableNumber: "2413", dealerName: "Lemon", major: 48476, minor: 28165)
-        
+        //Beetroot
+        let table3 = Table(tableNumber: "2414", dealerName: "Ice", major: 2651, minor: 58570)
+        //Blueberry
+        let table4 = Table(tableNumber: "2415", dealerName: "Blueberry", major: 23011, minor: 17764)
         
         tables.append(table1)
         tables.append(table2)
+        tables.append(table3)
+        tables.append(table4)
         
     }
     
