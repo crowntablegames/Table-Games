@@ -15,9 +15,10 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, CLLocationManagerDelegate {
     
     
-    
     var window: UIWindow?
     var launchSurveyWindow : Bool = true
+    var playerTable : Table?
+
     
     let proxID : String = "B9407F30-F5F8-466E-AFF9-25556B57FE6E"
     //let proxID : String = "8492E75F-4FD6-469D-B132-043FE94921D8"

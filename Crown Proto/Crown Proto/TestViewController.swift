@@ -33,6 +33,8 @@ class TestViewController: UIViewController {
     
     var tableBeacon : CLBeacon?
     
+    var playerTable : Table?
+    
     var tableInRange = false
     var playerAtTable : Bool = false
     var tables : [Table] = []
@@ -66,9 +68,11 @@ class TestViewController: UIViewController {
     }
     
     func showSurveyController() {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "surveyController")
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "surveyController") as! SurveyViewController
+        vc.playerTable = self.playerTable
         present(vc, animated: true, completion: nil)
     }
+    
     func isLoggedIn() -> Bool {
         let del = UIApplication.shared.delegate as! AppDelegate
         return del.launchSurveyWindow
@@ -135,6 +139,7 @@ extension TestViewController : CLLocationManagerDelegate {
                                     //pushNotification(identifier: "tableArrival", bodyString: "Arriving at table \(t.getTableNumber())")
 
                                     dealerLabel.text = "Dealer: \(t.getDealerName())"
+                                    playerTable = t
                                 }
                             }
                             playerAtTable = true
@@ -198,10 +203,13 @@ extension TestViewController : CLLocationManagerDelegate {
                             else {
                                 
                                 let timeSinceLastNotification = currentTime.timeIntervalSince(lastNotificationDate!)
-                            
-                                if (timeSinceLastNotification < intervalBetweenNotifications)  {
+                                print(timeSinceLastNotification)
+                                if (intervalBetweenNotifications < timeSinceLastNotification)  {
                                     pushNotification(identifier: "surveyRequest", bodyString: "We want you to tell us what you think of our service.")
                                     lastNotificationDate = Date()
+                                }
+                                else {
+                                    print("Not enough time between last notification")
                                 }
                             }
                             

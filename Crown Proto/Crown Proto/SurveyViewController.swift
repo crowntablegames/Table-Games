@@ -10,6 +10,10 @@ import UIKit
 
 class SurveyViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    
+    var playerTable : Table!
+    
+    @IBOutlet weak var tableLabel: UILabel!
     let positiveFbackArray : [String] = ["They paid me a lot of money", "They were friendly", "Game pace was excellent", "Great business understanding", "Other"]
 
     let negativeFbackArray : [String] = ["They took my money", "They were unfriendly", "Game pace was too fast/slow", "Lacking business knowledge", "Other"]
