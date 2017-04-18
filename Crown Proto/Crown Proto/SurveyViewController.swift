@@ -10,7 +10,7 @@ import UIKit
 
 class SurveyViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField: UITextField!
-
+    
     @IBOutlet var pickerView: UIPickerView!
     @IBOutlet weak var slider: TouchSlider!
     @IBAction func sliderChange(_ sender: Any) {
@@ -19,22 +19,50 @@ class SurveyViewController: UIViewController, UITextFieldDelegate {
         let rounded : Int = Int(slider.value)
         slider.value = Float(rounded)
         
+        
+        //
+        UserDefaults.standard.set(slider.value, forKey: "slider_value")
+        
     }
-
+    let serviceRank = UserDefaults.standard.float(forKey: "slider_value")
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       textField.delegate = self
+        textField.delegate = self
         
     }
-
+    
     @IBAction func dismiss(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-
+        
     }
     @IBAction func submit(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        //link to PHP file for mySQL
+        let request = NSMutableURLRequest(url: NSURL(string: "https://localhost/crownProto/connnect.php")! as URL)
+        request.httpMethod = "POST"
         
+        let postString = "a=\(serviceRank)"
+        //slider
+        //&b=\(pickerView.text)&c=\(tableNumber.text!)&d=\(dealer.text!)
+        
+        
+        request.httpBody = postString.data(using: String.Encoding.utf8)
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest) {
+            data, response, error in
+            
+            if error != nil {
+                print("error=\(error)")
+                return
+            }
+            
+            print("response = \(response)")
+            
+            let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            print("responseString = \(responseString)")
+        }
+        //end
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -47,8 +75,8 @@ class SurveyViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-
-
+    
+    
 }
 
 class TouchSlider : UISlider {
