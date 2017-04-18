@@ -29,7 +29,10 @@ class SurveyViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
         slider.value = Float(rounded)
         pickerView.reloadAllComponents()
         
+        UserDefaults.standard.set(slider.value, forKey: "slider_value")
+        
     }
+    let serviceRank = UserDefaults.standard.float(forKey: "slider_value")
 
     override func viewDidLoad() {
         super.viewDidLoad()
