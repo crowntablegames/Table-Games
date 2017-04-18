@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FloatRatingView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-Crown Proto.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-Crown ProtoTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-Crown ProtoUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>12D74ADB946CB7C543C1C819EC27091A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1602A1E7D90FCE671C641FD85128F7E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3B0D9CD7D8354261874EC5A276B5BAC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8BAD7C345FFAC0EA13B2E185826B5F65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E10250FECAFAA00B2CAAF40A7178BE26</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
