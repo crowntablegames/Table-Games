@@ -23,6 +23,11 @@ class TestViewController: UIViewController {
         
         self.present(vc, animated: true, completion: nil)
     }
+
+    var lastNotificationDate : Date?
+    
+    // Interval is represented in seconds.
+    var intervalBetweenNotifications : TimeInterval = TimeInterval(exactly: 7200.00)!
     
     var beaconManager: CLLocationManager = CLLocationManager()
     
@@ -127,7 +132,7 @@ extension TestViewController : CLLocationManagerDelegate {
                             for t in tables {
                                 if(t.matchTableBy(major: tableBeacon!.major.intValue, minor: tableBeacon!.minor.intValue)) {
                                     idLabel.text = "Table: \(t.getTableNumber())"
-                                    pushNotification(identifier: "tableArrival", bodyString: "Arriving at table \(t.getTableNumber())")
+                                    //pushNotification(identifier: "tableArrival", bodyString: "Arriving at table \(t.getTableNumber())")
 
                                     dealerLabel.text = "Dealer: \(t.getDealerName())"
                                 }
@@ -183,7 +188,26 @@ extension TestViewController : CLLocationManagerDelegate {
                             tableBeacon = nil
                             idLabel.text = "No Table"
                             dealerLabel.text = "No dealer"
-                            pushNotification(identifier: "surveyRequest", bodyString: "We want you to tell us what you think of our service.")
+                            
+                            let currentTime = Date()
+                            
+                            if (lastNotificationDate == nil) {
+                                pushNotification(identifier: "surveyRequest", bodyString: "We want you to tell us what you think of our service.")
+                                lastNotificationDate = Date()
+                            }
+                            else {
+                                
+                                let timeSinceLastNotification = currentTime.timeIntervalSince(lastNotificationDate!)
+                            
+                                if (timeSinceLastNotification < intervalBetweenNotifications)  {
+                                    pushNotification(identifier: "surveyRequest", bodyString: "We want you to tell us what you think of our service.")
+                                    lastNotificationDate = Date()
+                                }
+                            }
+                            
+                            
+//
+                            
 
                         }
                         else {

@@ -8,7 +8,12 @@
 
 import UIKit
 
-class SurveyViewController: UIViewController, UITextFieldDelegate {
+class SurveyViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    let positiveFbackArray : [String] = ["They paid me a lot of money", "They were friendly", "Game pace was excellent", "Great business understanding", "Other"]
+
+    let negativeFbackArray : [String] = ["They took my money", "They were unfriendly", "Game pace was too fast/slow", "Lacking business knowledge", "Other"]
+    
     @IBOutlet weak var textField: UITextField!
     
     @IBOutlet var pickerView: UIPickerView!
@@ -18,6 +23,7 @@ class SurveyViewController: UIViewController, UITextFieldDelegate {
         
         let rounded : Int = Int(slider.value)
         slider.value = Float(rounded)
+        pickerView.reloadAllComponents()
         
         
         //
@@ -27,6 +33,7 @@ class SurveyViewController: UIViewController, UITextFieldDelegate {
     let serviceRank = UserDefaults.standard.float(forKey: "slider_value")
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupPickerView()
         // Do any additional setup after loading the view.
         textField.delegate = self
         
