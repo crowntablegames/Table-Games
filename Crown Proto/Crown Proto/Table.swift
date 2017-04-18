@@ -34,5 +34,11 @@ class Table {
     public func getDealerName() -> String {
         return self.dealer.getName()
     }
+    public func matchTableBy(major : Int, minor : Int) -> Bool {
+        if (major == self.getMajor() && minor == self.getMinor()) {
+            return true
+        }
+        return false
+    }
     
 }

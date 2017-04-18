@@ -167,6 +167,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         self.locationManager.requestAlwaysAuthorization()
         let newRegion : CLBeaconRegion = CLBeaconRegion(proximityUUID: UUID(uuidString: proxID)!, identifier: "TEST")
         self.locationManager.startMonitoring(for: newRegion)
+        
     }
     
     

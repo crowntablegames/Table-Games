@@ -48,7 +48,8 @@ class TestViewController: UIViewController {
     func setupBeaconManager() {
         self.beaconManager.desiredAccuracy = kCLLocationAccuracyBest
         //self.beaconManager.requestAlwaysAuthorization()
-        
+        self.beaconManager.startUpdatingLocation()
+        self.beaconManager.allowsBackgroundLocationUpdates = true
         let region : CLBeaconRegion = CLBeaconRegion(proximityUUID: UUID(uuidString: proxID)!, identifier: "TEST")
         self.beaconManager.startRangingBeacons(in: region)
     }
@@ -104,20 +105,9 @@ class TestViewController: UIViewController {
 extension TestViewController : CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
-        print(beacons)
         
-        var firstBeacon : CLBeacon?
-        
-        for beacon in beacons {
-            if(beacon.proximity == CLProximity.immediate) {
-                firstBeacon = beacon
-                break
-            }
-        }
-        
-        //manager.startMonitoring(for: region)
         let knownBeacons = beacons.filter{ $0.proximity != CLProximity.unknown}
-        
+        print(knownBeacons)
         if(knownBeacons.count > 0) {
             
             if (tableBeacon != nil) {
@@ -133,10 +123,12 @@ extension TestViewController : CLLocationManagerDelegate {
                             print(tableBeacon ?? "nil")
                             print("---------")
                            
-
+                            
                             for t in tables {
-                                if(t.getMajor() == tableBeacon!.major.intValue && t.getMinor() == tableBeacon!.minor.intValue) {
+                                if(t.matchTableBy(major: tableBeacon!.major.intValue, minor: tableBeacon!.minor.intValue)) {
                                     idLabel.text = "Table: \(t.getTableNumber())"
+                                    pushNotification(identifier: "tableArrival", bodyString: "Arriving at table \(t.getTableNumber())")
+
                                     dealerLabel.text = "Dealer: \(t.getDealerName())"
                                 }
                             }
@@ -191,6 +183,8 @@ extension TestViewController : CLLocationManagerDelegate {
                             tableBeacon = nil
                             idLabel.text = "No Table"
                             dealerLabel.text = "No dealer"
+                            pushNotification(identifier: "surveyRequest", bodyString: "We want you to tell us what you think of our service.")
+
                         }
                         else {
                             //Do Nothing
@@ -214,7 +208,7 @@ extension TestViewController : CLLocationManagerDelegate {
                 print("Table going out of range")
                 timerFunc()
                 
-                if(seconds == 10){
+                if(seconds == 5){
                     print("Player Left Table")
                     tableBeacon = nil
                     seconds = 0
@@ -234,6 +228,33 @@ extension TestViewController : CLLocationManagerDelegate {
             }
 
         }
+    }
+    public func pushNotification(identifier : String, bodyString : String) {
+        
+        let content = initPushNotification(tableString: bodyString)
+        // Deliver the notification in five seconds.
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        let center = UNUserNotificationCenter.current()
+        
+        center.add(request) { (error : Error?) in
+            if let theError = error {
+                print("theError \(theError)")
+            }
+        }
+    }
+    
+    
+    func initPushNotification(tableString : String) -> UNMutableNotificationContent {
+        let content = UNMutableNotificationContent()
+        
+        content.title = "Crown Entertainment"
+        content.body = tableString
+        content.sound = UNNotificationSound.default()
+        print("Welcome Notification")
+        //content.categoryIdentifier = "exitRegionNotification"
+        
+        return content
     }
     
 }
